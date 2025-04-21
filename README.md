@@ -1,64 +1,105 @@
+# Planificador de Oficinas
 
-# ✨ Planner Pro
+Aplicación web para la gestión de tareas y proyectos en entornos de oficina.
 
-Una aplicación moderna de gestión de proyectos con tablero Kanban y diagrama de Gantt interactivo.
+## Características
 
-## 🚀 Características
+- 📋 Gestión de tareas y subtareas
+- 📅 Calendario integrado
+- 👥 Gestión de usuarios y equipos
+- 🏷️ Etiquetado de tareas
+- 📊 Dashboard con estadísticas
+- 💬 Sistema de comentarios
+- 🔄 Sincronización en tiempo real
 
-- 📋 Tablero Kanban con drag & drop
-- 📊 Diagrama de Gantt interactivo
-- 🎨 Tema claro/oscuro
-- 🏷️ Sistema de etiquetas
-- 📱 Diseño responsivo
-- ⚡ Rendimiento optimizado
+## Tecnologías
 
-## 🛠️ Tecnologías
-
+### Frontend
 - React
+- TypeScript
 - Tailwind CSS
-- Framer Motion
-- DND Kit
-- Gantt Task React
+- D3.js (para gráficos)
+- React Router
+- React Query
 
-## 📦 Funcionalidades Principales
+### Backend
+- Node.js
+- Express
+- Supabase (PostgreSQL)
+- Prisma ORM
 
-### 🔐 Autenticación
-- Registro / Inicio de sesión
-- Gestión de sesión persistente
+## Requisitos Previos
 
-### 📋 Gestión de Tableros
-- Crear y gestionar proyectos
-- Vista Kanban y Gantt
-- Organización por columnas
+- Node.js (v18 o superior)
+- npm o yarn
+- Cuenta en Supabase
 
-### 📌 Tareas
-- Crear, editar y eliminar tareas
-- Asignar etiquetas y prioridades
-- Fechas de inicio y fin
-- Seguimiento de progreso
+## Instalación
 
-### 🎯 Diagrama de Gantt
-- Vista interactiva de la línea de tiempo
-- Múltiples vistas (día, semana, mes)
-- Actualización en tiempo real
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/tu-usuario/planificador-oficinas.git
+cd planificador-oficinas
+```
 
-## 🎨 Personalización
+2. Instalar dependencias del backend:
+```bash
+cd backend
+npm install
+```
 
-- 🌓 Cambio entre tema claro y oscuro
-- 🎯 Prioridades con códigos de color
-- 🏷️ Sistema de etiquetas personalizable
+3. Configurar variables de entorno:
+```bash
+cp .env.example .env
+```
+Editar el archivo `.env` con tus credenciales de Supabase.
 
-## 📱 Responsive
+4. Iniciar el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-La aplicación está diseñada para funcionar en:
-- 💻 Escritorio
-- 📱 Tablet
-- 📱 Móvil
+## Estructura del Proyecto
 
-## 🔜 Próximas Características
+```
+planificador-oficinas/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── models/
+│   │   ├── middleware/
+│   │   └── config/
+│   ├── prisma/
+│   └── package.json
+└── README.md
+```
 
-- 📊 Más tipos de vistas
-- 👥 Colaboración en tiempo real
-- 📈 Estadísticas y reportes
-- 📱 Aplicación móvil
+## Configuración de la Base de Datos
+
+1. Crear una cuenta en Supabase
+2. Crear un nuevo proyecto
+3. Configurar las variables de entorno con las credenciales de Supabase
+4. Ejecutar el script de creación de tablas:
+```bash
+node src/scripts/createTables.js
+```
+
+## Contribuir
+
+1. Hacer fork del proyecto
+2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abrir un Pull Request
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## Contacto
+
+Tu Nombre - [@tu-twitter](https://twitter.com/tu-twitter)
+
+Link del Proyecto: [https://github.com/tu-usuario/planificador-oficinas](https://github.com/tu-usuario/planificador-oficinas)
 
